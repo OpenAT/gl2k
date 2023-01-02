@@ -7,9 +7,9 @@
         <template id="assets_frontend" inherit_id="fso_base_website.assets_frontend" name="GL2K Gardenvis">
             <xpath expr="//script[last()]" position="after">
 
-                <!-- Google Web Font -->
-                <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700" rel="stylesheet"/>
-                <link href="https://fonts.googleapis.com/css?family=Rubik:400,900" rel="stylesheet"/>
+                <!-- Google Web Font, self-hosted -->
+                <link href="/gl2k_config/static/src/css/fonts/nunitosans/nunitosans.css" rel="stylesheet"/>
+                <link href="/gl2k_config/static/src/css/fonts/rubik/rubik.css" rel="stylesheet"/>
                 
                 <!-- Leaflet library -->
                 <link rel="stylesheet" href='/gl2k_gardenvis/static/src/lib/leaflet/leaflet.css'/>
