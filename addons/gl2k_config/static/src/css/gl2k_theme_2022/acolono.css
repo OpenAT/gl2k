@@ -7,7 +7,7 @@
 }
 .panel .donation_button:hover,
 .panel .donation_button:focus {
-  background-color: #e8f1db !important;
+  background-color: #e8f1db !important; 
   border: 2px rgba(0, 0, 0, 0) solid !important;
   outline: 0 !important;
 }
