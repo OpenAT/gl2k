@@ -541,7 +541,7 @@ body[data-rootcatid="15"] #products_grid .oe_product section h5 {
 body[data-rootcatid="15"] .oe_website_sale .products_pager .input-group {
     display: none;
 }
-/* body .oe_website_sale h1, */
+body .oe_website_sale h1,
 h1[itemprop=name] {
       display: none;
 }
