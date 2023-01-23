@@ -31,6 +31,8 @@ h4 {
 .arbitrary_price_form_group {
     margin-top: 12px;
     padding: 0;
+    border-left: 0 !important;
+    border-bottom: 0 !important;
 }
 .arbitrary_price_form_group #price_donate.form-control {
     text-align: left;
@@ -317,7 +319,8 @@ a:focus {
     font-family: "Rubik", sans-serif;
     font-size: 16px;
     line-height: 22px;
-    text-shadow: unset ;
+    text-shadow: unset;
+    box-shadow: unset;
 }
 .wsd_button_back_to_page:hover,
 .wsd_button_back_to_page:focus,
@@ -537,4 +540,8 @@ body[data-rootcatid="15"] #products_grid .oe_product section h5 {
 }
 body[data-rootcatid="15"] .oe_website_sale .products_pager .input-group {
     display: none;
+}
+/* body .oe_website_sale h1, */
+h1[itemprop=name] {
+      display: none;
 }
