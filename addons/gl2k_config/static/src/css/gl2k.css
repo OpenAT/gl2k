@@ -553,6 +553,35 @@ body[data-rootcatid="4"] .ppt_opc-checkout {
 }
 /* CUSTOM HEADER END */
 
+/* CSS from: addons/gl2k_config/static/src/css/gl2k_theme_2022/gl2k_2022.css -- overwrite checkout prev next button for gl2k_theme_2022 */
+/* * */
+/*.wsd_cfi_buttons .wsd_button_back_to_page,
+.wsd_cfi_buttons .pull-right {
+    padding: 10px 25px !important;
+    text-align: center !important;
+    letter-spacing: 0!important;
+    border-color: rgba(0, 0, 0, 0) !important;
+    border-radius: 25px !important;
+    background-color: #003d84 !important;
+    background-image: unset !important;
+    color: white !important;
+    font-family: "Rubik", sans-serif !important;
+    font-size: 16px !important;
+    line-height: 22px !important;
+    text-shadow: unset !important;
+}
+.wsd_cfi_buttons .wsd_button_back_to_page:hover,
+.wsd_cfi_buttons .wsd_button_back_to_page:focus,
+.wsd_cfi_buttons .wsd_button_back_to_page:active,
+.wsd_cfi_buttons .pull-right:hover,
+.wsd_cfi_buttons .pull-right:focus,
+.wsd_cfi_buttons .pull-right:active {
+    border-color: rgba(0, 0, 0, 0) !important;
+    border-radius: 25px !important;
+    background-color: #75b836 !important;
+    color: white !important;
+}*/
+/* * */
 
 /* OTHER TESTS */
 /* joe begin tests

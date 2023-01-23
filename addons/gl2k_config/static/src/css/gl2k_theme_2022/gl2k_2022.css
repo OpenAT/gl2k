@@ -79,21 +79,13 @@ h4 {
     padding: 0;
 }
 
-.oe_price_h4 .form-group.donation_button_group:nth-child(4) {
-    border-right: 2px solid #e8f1db;
-    border-bottom: 2px solid #e8f1db;
-}
+
 .form-group div[class^="donation_button-"] {
     border-right: 2px solid #e8f1db;
     border-bottom: 2px solid #e8f1db;
 }
 
-.oe_price_h4 .form-group.donation_button_group:nth-child(5) {
-    border-bottom: 2px solid #e8f1db;
-}
-.oe_price_h4 .form-group.donation_button_group:nth-child(7) {
-    border-right: 2px solid #e8f1db;
-}
+
 button {
     color: #75b836;
     border: 0;
@@ -312,7 +304,6 @@ a:focus {
     box-shadow: unset
 }
 .wsd_button_back_to_page,
-.btn-default,
 .btn.pull-right,
 .btn-default {
     padding: 10px 25px;
@@ -321,10 +312,12 @@ a:focus {
     border-color: rgba(0, 0, 0, 0);
     border-radius: 25px;
     background-color: #003d84;
+    background-image: unset;
     color: white;
     font-family: "Rubik", sans-serif;
     font-size: 16px;
     line-height: 22px;
+    text-shadow: unset ;
 }
 .wsd_button_back_to_page:hover,
 .wsd_button_back_to_page:focus,
@@ -360,27 +353,14 @@ a:focus {
     margin-left: 12px;
 }
 
-.quick_add_to_cart {
-    text-align: right;
-    margin-top: 18px;
-}
+
 .text-primary {
     color: #75b836;
 }
 .text-info {
     color: #3B3B3A;
 }
-.oe_product.oe_grid {
-    box-shadow: unset;
-    border: 2px solid #e8f1db;
-    transition: all 0.6s ease 0s;
-}
-.oe_product.oe_grid:hover {
-    box-shadow: unset;
-    border: 2px solid #e8f1db;
-    background-color:  #e8f1db;
-    transition: all 0.6s ease 0s;
-}
+
 body[data-on-shop-page=True][data-latest-product-theme=gl2k_inline_test]:not([data-confirmation-controller-called=True]) #wrapwrap main #wrap #website_sale_donate input {
     font-family: "Rubik", sans-serif;
     font-weight: normal;
@@ -391,6 +371,9 @@ input::placeholder {
 .wsd_opc_payment,
 .wsd_opc_delivery {
     margin-bottom: 24px;
+}
+.products_pager > div > ul {
+    padding-left: 0;
 }
 .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
     z-index: 2;
@@ -408,7 +391,7 @@ input::placeholder {
     float: left;
     padding: 6px 12px;
     margin-left: -1px;
-    line-height: 1.42857143;
+    line-height: 1;
     color: #003d84;
     text-decoration: none;
     background-color: white;
@@ -454,3 +437,104 @@ input::placeholder {
     box-shadow: unset;
 }
 
+/*  CSS overwrite checkout prev next button  */
+.wsd_cfi_buttons .wsd_button_back_to_page,
+.wsd_cfi_buttons .pull-right {
+    padding: 10px 25px !important;
+    text-align: center !important;
+    letter-spacing: 0!important;
+    border-color: rgba(0, 0, 0, 0) !important;
+    border-radius: 25px !important;
+    background-color: #003d84 !important;
+    background-image: unset !important;
+    color: white !important;
+    font-family: "Rubik", sans-serif !important;
+    font-size: 16px !important;
+    line-height: 22px !important;
+    text-shadow: unset !important;
+}
+.wsd_cfi_buttons .wsd_button_back_to_page:hover,
+.wsd_cfi_buttons .wsd_button_back_to_page:focus,
+.wsd_cfi_buttons .wsd_button_back_to_page:active,
+.wsd_cfi_buttons .pull-right:hover,
+.wsd_cfi_buttons .pull-right:focus,
+.wsd_cfi_buttons .pull-right:active {
+    border-color: rgba(0, 0, 0, 0) !important;
+    border-radius: 25px !important;
+    background-color: #75b836 !important;
+    color: white !important;
+}
+/*
+shop
+ */
+
+body[data-rootcatid="15"] #products_grid .oe_product {
+    width: 340px;
+    height: 500px;
+    margin-right: 4px;
+}
+.oe_product section {
+    background: white;
+}
+.oe_product .oe_product_cart {
+    border: 2px solid #e8f1db;
+    padding: 30px;
+}
+.oe_price_h4 .form-group.donation_button_group:nth-child(4) {
+    border-right: 2px solid #e8f1db;
+    border-bottom: 2px solid #e8f1db;
+}
+.oe_price_h4 .form-group.donation_button_group:nth-child(5) {
+    border-bottom: 2px solid #e8f1db;
+}
+.oe_price_h4 .form-group.donation_button_group:nth-child(7) {
+    border-right: 2px solid #e8f1db;
+}
+
+.oe_product.oe_grid {
+    box-shadow: unset;
+    border: unset;
+    transition: all 0.6s ease 0s;
+}
+.oe_product.oe_grid:hover {
+    box-shadow: unset;
+    border: unset;
+    background-color: transparent;
+    transition: all 0.6s ease 0s;
+}
+body[data-rootcatid="15"] #products_grid .oe_product section {
+    display: flex;
+    flex-direction: column;
+    height: 160px;
+    align-items: center;
+    justify-content: normal;
+    padding: 2px 2px 2px 2px;
+    background: white;
+}
+body[data-rootcatid="15"] #products_grid .oe_product section h5 {
+    font-size: 20px;
+}
+
+
+.oe_product.oe_grid .oe_subdescription {
+    margin-bottom: 4px;
+}
+.oe_product .oe_subdescription {
+    font-size: 0.8em;
+    overflow: hidden;
+
+}
+.oe_product_cart .quick_add_to_cart {
+    margin-top: 18px;
+    margin-bottom: 18px;
+    order: 4;
+}
+
+.oe_product .product_price {
+    order: 3;
+    position: initial;
+    padding: 0;
+}
+body[data-rootcatid="15"] .oe_website_sale .products_pager .input-group {
+    display: none;
+}
