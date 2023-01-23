@@ -297,22 +297,23 @@ body[data-on-shop-page=True][data-latest-product-theme=gl2k_inline_test]:not([da
 .has-error .control-label {
     color: red;
 }
-#wsd_checkout_form .billing-fields .form-control-feedback {
-    right: 42px;
+body #wsd_checkout_form .billing-fields .form-control-feedback {
+    right: 30px;
+    top: 40px;
     font-size: 16px;
     border-radius: 24px;
     width: 24px;
     height: 24px;
     line-height: 25px;
-    top: 37px;
+
 }
+
 #wsd_checkout_form .billing-fields .form-control-feedback.glyphicon-ok {
-    color: white;
-    background-color: #75b836;
+    color: #75b836;
+
 }
 #wsd_checkout_form .billing-fields .form-control-feedback.glyphicon-remove {
-    color: white;
-    background-color: red;
+    color: red;
 }
 a {
     color: #75b836;
@@ -580,11 +581,20 @@ body[data-rootcatid="15"] .oe_website_sale .products_pager .input-group {
 }
 body .oe_website_sale h1,
 h1[itemprop=name] {
-      display: none;
+    display: none;
 }
 
 @media only screen and (min-width: 350px) {
     body[data-on-shop-page="True"][data-latest-product-theme="gl2k_inline_test"]:not([data-confirmation-controller-called="True"]) #wrapwrap main #wrap #product_detail .product_price .btn {
         font-size: 46px;
     }
+}
+
+.has-error[for=frst_iban] .form-control-feedback {
+    top: 32px !important;
+}
+
+
+.f-type-boolean.has-error .form-control-feedback {
+    top: 0 !important;
 }
