@@ -317,7 +317,8 @@ a:focus {
     font-family: "Rubik", sans-serif;
     font-size: 16px;
     line-height: 22px;
-    text-shadow: unset ;
+    text-shadow: unset;
+    box-shadow: unset;
 }
 .wsd_button_back_to_page:hover,
 .wsd_button_back_to_page:focus,
@@ -537,4 +538,8 @@ body[data-rootcatid="15"] #products_grid .oe_product section h5 {
 }
 body[data-rootcatid="15"] .oe_website_sale .products_pager .input-group {
     display: none;
+}
+/* body .oe_website_sale h1, */
+h1[itemprop=name] {
+      display: none;
 }
