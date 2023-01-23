@@ -12,9 +12,6 @@
     font-display: swap;
     src: local(""), url("/themes/custom/ao_canvas/dist/css/assets/fonts/rubik/rubik-v20-latin-500.woff2") format("woff2"), url("/themes/custom/ao_canvas/dist/css/assets/fonts/rubik/rubik-v20-latin-500.woff") format("woff")
 }
-
-
-
 @font-face {
     font-family: "Rubik";
     font-style: normal;
@@ -22,9 +19,6 @@
     font-display: swap;
     src: local(""), url("/themes/custom/ao_canvas/dist/css/assets/fonts/rubik/rubik-v20-latin-600.woff2") format("woff2"), url("/themes/custom/ao_canvas/dist/css/assets/fonts/rubik/rubik-v20-latin-600.woff") format("woff")
 }
-
-
-
 @font-face {
     font-family: "Rubik";
     font-style: normal;
@@ -32,9 +26,6 @@
     font-display: swap;
     src: local(""), url("/themes/custom/ao_canvas/dist/css/assets/fonts/rubik/rubik-v20-latin-700.woff2") format("woff2"), url("/themes/custom/ao_canvas/dist/css/assets/fonts/rubik/rubik-v20-latin-700.woff") format("woff")
 }
-
-
-
 @font-face {
     font-family: "Rubik";
     font-style: normal;
@@ -42,9 +33,6 @@
     font-display: swap;
     src: local(""), url("/themes/custom/ao_canvas/dist/css/assets/fonts/rubik/rubik-v20-latin-800.woff2") format("woff2"), url("/themes/custom/ao_canvas/dist/css/assets/fonts/rubik/rubik-v20-latin-800.woff") format("woff")
 }
-
-
-
 @font-face {
     font-family: "Rubik";
     font-style: normal;
@@ -52,9 +40,6 @@
     font-display: swap;
     src: local(""), url("/themes/custom/ao_canvas/dist/css/assets/fonts/rubik/rubik-v20-latin-900.woff2") format("woff2"), url("/themes/custom/ao_canvas/dist/css/assets/fonts/rubik/rubik-v20-latin-900.woff") format("woff")
 }
-
-
-
 @font-face {
     font-family: "Glyphicons Halflings";
     font-style: normal;
@@ -596,4 +581,10 @@ body[data-rootcatid="15"] .oe_website_sale .products_pager .input-group {
 body .oe_website_sale h1,
 h1[itemprop=name] {
       display: none;
+}
+
+@media only screen and (min-width: 350px) {
+    body[data-on-shop-page="True"][data-latest-product-theme="gl2k_inline_test"]:not([data-confirmation-controller-called="True"]) #wrapwrap main #wrap #product_detail .product_price .btn {
+        font-size: 46px;
+    }
 }
