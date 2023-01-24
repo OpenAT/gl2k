@@ -297,6 +297,10 @@ body[data-on-shop-page=True][data-latest-product-theme=gl2k_inline_test]:not([da
 .has-error .control-label {
     color: red;
 }
+/* Labels für erforderliche Felder schwarz */
+.form-group label.text-danger {
+	color: black;
+}
 body #wsd_checkout_form .billing-fields .form-control-feedback {
     right: 30px;
     top: 40px;
@@ -478,9 +482,9 @@ input::placeholder {
     box-shadow: unset;
 }
 
-/*  CSS overwrite checkout prev next button  */
+/*  CSS overwrite checkout prev next button, page 3 submit button  */
 .wsd_cfi_buttons .wsd_button_back_to_page,
-.wsd_cfi_buttons .pull-right {
+.wsd_cfi_buttons .pull-right, #button_paynow {
     padding: 10px 25px !important;
     text-align: center !important;
     letter-spacing: 0!important;
@@ -601,11 +605,20 @@ body[data-on-shop-page="True"][data-latest-product-theme="gl2k_inline_test"]:not
 .f-type-boolean.has-error .form-control-feedback {
     top: 0 !important;
 }
-body[data-on-shop-page="True"][data-latest-product-theme="gl2k_inline_test"]:not([data-confirmation-controller-called="True"]) #wrapwrap main #wrap .btn-primary {
-    display: none;
+/* Dieses zum verstecken des login buttons */
+.checkout_steps_navigation a.btn-primary.navbar-btn {
+	display: none;
 }
 body[data-on-shop-page="True"][data-latest-product-theme="gl2k_inline_test"]:not([data-confirmation-controller-called="True"]) #wrapwrap main #wrap .btn-primary.a-submit {
     display: block;
 }
-
-
+/* Zahlungsintervalle volle breite */
+select[name="payment_interval_id"] {
+    max-width: 100% !important;
+}
+/* Komischer einrückung bei großen Bildschirmen verhindern */
+@media (min-width: 992px) {
+	.col-md-pull-4 {
+		right: unset;
+	}
+}
