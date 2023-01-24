@@ -589,6 +589,9 @@ h1[itemprop=name] {
         font-size: 46px;
     }
 }
+body[data-on-shop-page="True"][data-latest-product-theme="gl2k_inline_test"]:not([data-confirmation-controller-called="True"]) #wrapwrap main #wrap #product_detail .product_price .btn {
+    display: block;
+}
 
 .has-error[for=frst_iban] .form-control-feedback {
     top: 32px !important;
@@ -598,6 +601,11 @@ h1[itemprop=name] {
 .f-type-boolean.has-error .form-control-feedback {
     top: 0 !important;
 }
-body[data-on-shop-page="True"][data-latest-product-theme="gl2k_inline_test"]:not([data-confirmation-controller-called="True"]) #wrapwrap main #wrap .btn-primary{
+body[data-on-shop-page="True"][data-latest-product-theme="gl2k_inline_test"]:not([data-confirmation-controller-called="True"]) #wrapwrap main #wrap .btn-primary {
     display: none;
 }
+body[data-on-shop-page="True"][data-latest-product-theme="gl2k_inline_test"]:not([data-confirmation-controller-called="True"]) #wrapwrap main #wrap .btn-primary.a-submit {
+    display: block;
+}
+
+
