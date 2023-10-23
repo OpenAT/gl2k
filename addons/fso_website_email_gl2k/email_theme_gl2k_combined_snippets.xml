@@ -514,6 +514,19 @@
                                                                                                      alt="Twitter Icon"/>
                                                                                             </a>
                                                                                         </td>
+                                                                                        <td align="center"
+                                                                                            style="padding:0 10px;">
+                                                                                            <a href="https://www.linkedin.com/company/global2000"
+                                                                                               target="_blank"
+                                                                                               style="display: inline-block; text-decoration: none;">
+                                                                                                <img src="/fso_website_email_gl2k/static/src/icons/gl2k_linkedin.png"
+                                                                                                     style="width:32px; border:0 none; -ms-interpolation-mode: bicubic;"
+                                                                                                     align="left"
+                                                                                                     vspace="10"
+                                                                                                     hspace="10"
+                                                                                                     alt="Twitter Icon"/>
+                                                                                            </a>
+                                                                                        </td>
                                                                                     </tr>
                                                                                 </tbody>
                                                                             </table>
